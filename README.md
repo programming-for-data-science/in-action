@@ -5,3 +5,4 @@ These sections take a data driven approach to understanding issues such as gentr
 - [**Exploring Educational Statistics**](/tidyr): The _`tidyr` In Action_ section uses the `tidyr` package to explore variations in educational investment and attainment around the world using data from the World Bank. 
 - [**Finding Cuban Food in Seattle**](/apis): The _APIS In Action_ section uses the Yelp and Google Maps APIs to build a map of the highest rated Cuban Restaurants (in Seattle) on Yelp.
 - [**Mapping Evictions in San Francisco**](/ggplot2): The _`ggplot2` In Action_ section uses the `ggplot2` package to expose the intensity and distribution of evictions in the city of San Francisco.
+- [**Visualizing Building Permits in Seattle**](/interacitve-vis): The _Interactive Visualization In Action_ section uses various interactive visualization packages to explore new building permits in Seattle since 2010. 

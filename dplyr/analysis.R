@@ -37,10 +37,6 @@ most_early <- flights %>%
   group_by(dest) %>% # group by destination
   summarize(delay = mean(arr_delay, na.rm = TRUE)) # compute mean delay
 
-
-
-
-
 # Identify the destination where flights, on average, arrive most early
 most_early <- flights %>%
   group_by(dest) %>% # group by destination

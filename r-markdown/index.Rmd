@@ -1,0 +1,41 @@
+---
+title: "Life Expectancy Report"
+output: html_document
+---
+```{r setup, include = FALSE}
+# Load results from the analysis
+# errors and messages will not be printed because of the `include = FALSE` option
+source("analysis.R")
+
+# Also load additional libraries that may be needed for output
+library("knitr")
+```
+
+## Overview
+This is a brief report regarding life expectancy for each country from
+1960 to 2015 ([source](https://data.worldbank.org/indicator/SP.DYN.LE00.IN)).
+The data reveals that the country with the longest life expectancy was
+`r longest_le$Country.Name`, with a life expectancy of `r longest_le$expectancy`.
+That life expectancy was `r le_difference` years longer than the life expectancy
+in `r shortest_le$Country.Name`.
+Here are the countries whose life expectancy **improved the most** since 1960.
+
+```{r top_10_gain, echo = FALSE}
+# Show the top 10 table (specifying the column names to display)
+kable(top_10_gain, col.names = c("Country", "Change in Life Expectancy"))
+```
+
+## Life Expectancy in 2015
+To identify geographic variations in life expectancy,
+here is a choropleth map of life expectancy in 2015:
+
+```{r le_map, echo = FALSE}
+# Create and render a world map using the `rworldmap` package
+mapCountryData(
+  mapped_data, # indicate the data to map
+  mapTitle = "Life Expectancy in 2015",
+  nameColumnToPlot = "X2015",
+  addLegend = F, # exclude the legend
+  colourPalette = brewer.pal(7, "Blues") # set the color palette
+)
+```

@@ -6,3 +6,4 @@ These sections take a data driven approach to understanding issues such as gentr
 - [**Finding Cuban Food in Seattle**](/apis): The _APIS In Action_ section uses the Yelp and Google Maps APIs to build a map of the highest rated Cuban Restaurants (in Seattle) on Yelp.
 - [**Mapping Evictions in San Francisco**](/ggplot2): The _`ggplot2` In Action_ section uses the `ggplot2` package to expose the intensity and distribution of evictions in the city of San Francisco.
 - [**Visualizing Building Permits in Seattle**](/interacitve-vis): The _Interactive Visualization In Action_ section uses various interactive visualization packages to explore new building permits in Seattle since 2010. 
+- [**Reporting on Life Expectancy**](/r-makrdown): The _R Markdown in Action_ section demonstrates the use of R Markdown to generate a website as a report on life expectancy data from the World Bank.
